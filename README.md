@@ -1,5 +1,10 @@
 # Andrey Badalin Portfolio
 
+## Links
+
+- GitHub: https://github.com/Andrey15211/andrey-portfolio
+- Live Demo: https://andrey-portfolio-liard.vercel.app
+
 Двуязычное портфолио Андрея Бадалина, junior frontend/fullstack-разработчика. Проект демонстрирует коммерческие сайты, дашборды, CRM-инструменты, сервисы бронирования, приложения для Telegram-ботов и контролируемый AI-assisted workflow.
 
 ## Стек
@@ -73,8 +78,7 @@ npm run start
 3. Оставьте автоматически определенный preset `Next.js`.
 4. Не добавляйте env-переменные: они не требуются.
 5. Запустите deploy.
-6. После создания отдельных case-study репозиториев замените URL в `src/data/projects.ts`.
-7. Замените контактные ссылки в `src/components/ContactSection.tsx`.
+6. Проверьте `/ru` и `/en`, а также внешние ссылки карточек проектов.
 
 ## Portfolio Case Studies
 

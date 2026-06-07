@@ -34,7 +34,7 @@ export function HeroSection() {
             </a>
             <a
               className="button button-secondary"
-              href="https://github.com/placeholder"
+              href="https://github.com/Andrey15211"
               target="_blank"
               rel="noreferrer"
               aria-label={t("githubLabel")}

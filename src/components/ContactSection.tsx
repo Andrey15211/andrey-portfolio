@@ -1,26 +1,14 @@
-import { ArrowUpRight, Github, Mail, Send } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export function ContactSection() {
   const t = useTranslations("contact");
   const contacts = [
     {
-      label: t("telegram"),
-      value: t("telegramValue"),
-      href: "https://t.me/placeholder",
-      icon: Send,
-    },
-    {
       label: t("github"),
       value: t("githubValue"),
-      href: "https://github.com/placeholder",
+      href: "https://github.com/Andrey15211",
       icon: Github,
-    },
-    {
-      label: t("email"),
-      value: t("emailValue"),
-      href: "mailto:contact@example.com",
-      icon: Mail,
     },
   ];
 
