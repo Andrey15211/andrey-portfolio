@@ -1,13 +1,29 @@
 # Andrey Badalin Portfolio
 
-## Links
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Localization](https://img.shields.io/badge/localization-RU%20%2F%20EN-7c3aed)
+![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-black?logo=vercel)
 
-- GitHub: https://github.com/Andrey15211/andrey-portfolio
-- Live Demo: https://andrey-portfolio-liard.vercel.app
+A bilingual developer portfolio presenting eight production-oriented frontend case studies. It combines localized content, responsive layouts, typed project data, and direct links to live demos and source repositories.
 
-Двуязычное портфолио Андрея Бадалина, junior frontend/fullstack-разработчика. Проект демонстрирует коммерческие сайты, дашборды, CRM-инструменты, сервисы бронирования, приложения для Telegram-ботов и контролируемый AI-assisted workflow.
+## Live Demo
 
-## Стек
+https://andrey-portfolio-liard.vercel.app
+
+## Source Code
+
+https://github.com/Andrey15211/andrey-portfolio
+
+## Features
+
+- Eight portfolio case studies covering commerce, dashboards, CRM, booking, APIs, animation, and task management
+- Responsive desktop, tablet, and mobile layouts
+- Localized metadata, navigation, project content, and accessibility labels
+- Static locale routes and reusable typed content
+- Reduced-motion support and keyboard-visible focus states
+
+## Tech Stack
 
 - Next.js 16 App Router
 - React 19
@@ -17,78 +33,51 @@
 - Lucide React
 - Vercel
 
-## Возможности
+## Localization
 
-- Темный premium tech-интерфейс в стиле технического досье
-- Адаптивная верстка для desktop, tablet и mobile
-- Семантическая навигация и доступные focus-состояния
-- Восемь карточек case study с централизованными ссылками
-- Типизированные данные проектов и навыков
-- RU/EN локализация с локализованными metadata и aria-labels
-- Русский язык по умолчанию
-- Статическая генерация маршрутов `/ru` и `/en`
-- Поддержка `prefers-reduced-motion`
+- RU/EN support: complete interface localization
+- Default language: Russian (`/ru`)
+- Language switcher: available in the desktop header and mobile menu
+- English route: `/en`
 
-## RU/EN Localization
+## Screenshots
 
-Локализация реализована через `next-intl`.
+### Desktop
 
-- Словари: `messages/ru.json`, `messages/en.json`
-- Конфигурация: `src/i18n/`
-- Маршруты: `/ru`, `/en`
-- Корневой `/` перенаправляется на русский `/ru`
-- Переключатель RU / EN расположен в header и мобильном меню
-- Названия технологий остаются без перевода
+![Portfolio desktop view](docs/screenshots/desktop.png)
 
-Все пользовательские тексты, статусы проектов и accessibility-подписи вынесены в словари.
+### Mobile
 
-## Локальный запуск
+Planned path: `docs/screenshots/mobile.png`
 
-Требуется Node.js 20.9 или новее.
+### RU/EN example
+
+![Portfolio English localization](docs/screenshots/localization.png)
+
+Mobile screenshot will be added after final device-width capture.
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
-```
-
-Откройте [http://localhost:3000](http://localhost:3000). Приложение перенаправит на `/ru`.
-
-## Проверки
-
-```bash
-npm run lint
-npm run typecheck
 npm run build
 ```
 
-Для проверки production-сборки локально:
+Open `http://localhost:3000`; the root route redirects to `/ru`.
 
-```bash
-npm run start
-```
+## Deployment
 
-## Переменные окружения
+Deployed on Vercel with the standard Next.js preset. The project does not require environment variables.
 
-Проект не требует переменных окружения. Файл `.env.example` оставлен как явное подтверждение отсутствия обязательной конфигурации. Реальные API-ключи, токены и секреты не используются.
+## What this project demonstrates
 
-## Деплой на Vercel
+- Commercial frontend presentation
+- Localized App Router architecture
+- Responsive portfolio and case-study design
+- Typed content modeling
+- Accessible, production-oriented frontend delivery
 
-1. Загрузите репозиторий на GitHub.
-2. Импортируйте репозиторий в Vercel.
-3. Оставьте автоматически определенный preset `Next.js`.
-4. Не добавляйте env-переменные: они не требуются.
-5. Запустите deploy.
-6. Проверьте `/ru` и `/en`, а также внешние ссылки карточек проектов.
+## Recommended GitHub Topics
 
-## Portfolio Case Studies
-
-1. BuildMarket Store
-2. Price Tracker Dashboard
-3. Bot Orders CRM
-4. Sales Analytics Dashboard
-5. Booking Service App
-6. Media Library API App
-7. Animated SaaS Landing
-8. Team Task Manager
-
-Проект показывает компонентную архитектуру, локализацию App Router, адаптивный интерфейс, типизированный контент и подготовку frontend-проекта к production-деплою.
+`portfolio` `nextjs` `react` `typescript` `tailwindcss` `next-intl` `responsive-design` `frontend-portfolio` `vercel`
