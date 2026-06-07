@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "title": "Andrey Badalin | Frontend / Fullstack Developer",
+    "description": "Portfolio of Andrey Badalin: websites, dashboards, CRM tools, booking systems and Telegram bot-related web apps."
+  },
+  "common": {
+    "github": "GitHub",
+    "liveDemo": "Live demo",
+    "opensNewTab": "opens in a new tab"
+  },
+  "header": {
+    "homeLabel": "Andrey Badalin, home",
+    "primaryNavigation": "Primary navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "workflow": "Workflow",
+    "contact": "Contact",
+    "letsTalk": "Let's talk"
+  },
+  "language": {
+    "label": "Language",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "hero": {
+    "role": "Junior Frontend / Fullstack Developer",
+    "firstName": "Andrey",
+    "lastName": "Badalin.",
+    "availability": "Open to junior opportunities",
+    "description": "I build commercial websites, dashboards, CRM tools, booking systems and Telegram bot-related web apps.",
+    "viewProjects": "View projects",
+    "contact": "Contact",
+    "githubLabel": "GitHub profile, opens in a new tab",
+    "portfolio": "Portfolio / 2026",
+    "location": "Based in Russia · Available remotely"
+  },
+  "about": {
+    "section": "About",
+    "statementMain": "Learning by building",
+    "statementAccent": " software people can actually use.",
+    "paragraphOne": "I'm an IT student focused on practical, business-oriented web applications: from clear marketing sites to internal dashboards, CRM systems and booking products.",
+    "paragraphTwo": "I use AI tools as part of a disciplined development workflow, not as a substitute for engineering judgment. I manually control architecture, testing, integrations and deployment.",
+    "principles": {
+      "practicalLabel": "01 / Practical",
+      "practicalText": "Business goals, real workflows and useful interfaces come before decorative complexity.",
+      "accountableLabel": "02 / Accountable",
+      "accountableText": "AI accelerates execution; architecture, integration, testing and deployment remain my responsibility."
+    }
+  },
+  "skills": {
+    "section": "Capabilities",
+    "description": "A focused toolkit for taking web products from interface to deployment.",
+    "groupLabel": "{group} skills",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database / Auth",
+      "tools": "Tools",
+      "aiWorkflow": "AI Workflow"
+    }
+  },
+  "projects": {
+    "section": "Selected projects",
+    "description": "Eight focused case studies spanning commerce, operations, analytics and product interfaces.",
+    "stackLabel": "{title} technology stack",
+    "githubLabel": "{title} GitHub repository, opens in a new tab",
+    "demoLabel": "{title} live demo, opens in a new tab",
+    "status": {
+      "planned": "Planned",
+      "inProgress": "In progress",
+      "completed": "Completed"
+    },
+    "items": {
+      "buildMarket": {
+        "title": "BuildMarket Store",
+        "description": "A conversion-focused construction marketplace with product discovery, filtering, cart flows and a scalable catalog interface."
+      },
+      "priceTracker": {
+        "title": "Price Tracker Dashboard",
+        "description": "A monitoring workspace for product prices, trend changes, alert thresholds and compact historical comparisons."
+      },
+      "botOrders": {
+        "title": "Bot Orders CRM",
+        "description": "An operator-focused CRM for Telegram bot orders, customer context, pipeline status and fast fulfillment workflows."
+      },
+      "salesAnalytics": {
+        "title": "Sales Analytics Dashboard",
+        "description": "A clear business intelligence surface for revenue, conversion, channel performance and period-over-period analysis."
+      },
+      "bookingService": {
+        "title": "Booking Service App",
+        "description": "A responsive appointment flow with service selection, calendar availability and practical booking management."
+      },
+      "mediaLibrary": {
+        "title": "Media Library API App",
+        "description": "A searchable media collection built around external API integration, saved lists and resilient content states."
+      },
+      "saasLanding": {
+        "title": "Animated SaaS Landing",
+        "description": "A high-performance product landing page with controlled motion, strong hierarchy and reusable marketing sections."
+      },
+      "taskManager": {
+        "title": "Team Task Manager",
+        "description": "A collaborative planning interface for assignments, priorities, progress visibility and focused daily execution."
+      }
+    }
+  },
+  "workflow": {
+    "section": "Workflow",
+    "description": "A direct process with explicit validation before release.",
+    "steps": {
+      "idea": "Idea",
+      "design": "Design",
+      "development": "Development",
+      "testing": "Testing",
+      "deploy": "Deploy",
+      "documentation": "Documentation"
+    }
+  },
+  "contact": {
+    "titleMain": "Let's build something",
+    "titleAccent": " useful.",
+    "description": "Available for junior roles, internships and focused freelance projects.",
+    "telegram": "Telegram",
+    "github": "GitHub",
+    "email": "Email",
+    "telegramValue": "Contact details coming soon",
+    "githubValue": "Profile link coming soon",
+    "emailValue": "Email address coming soon"
+  },
+  "footer": {
+    "copyright": "© {year} Andrey Badalin",
+    "note": "Designed and built with intention.",
+    "backToTop": "Back to top ↑"
+  }
+}
