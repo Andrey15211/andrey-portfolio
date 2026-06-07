@@ -1,7 +1,9 @@
 {
   "metadata": {
-    "title": "Andrey Badalin | Frontend / Fullstack Developer",
-    "description": "Portfolio of Andrey Badalin: websites, dashboards, CRM tools, booking systems and Telegram bot-related web apps."
+    "title": "Andrey Badalin | Junior Frontend / Fullstack Developer",
+    "description": "Junior Frontend / Fullstack Developer portfolio by Andrey Badalin, featuring 8 deployed case studies built with Next.js, React, and TypeScript.",
+    "keywords": "Andrey Badalin, Junior Frontend Developer, Junior Fullstack Developer, developer portfolio, Next.js developer, React developer, TypeScript, web development, case studies",
+    "ogAlt": "Andrey Badalin — Junior Frontend / Fullstack Developer portfolio"
   },
   "common": {
     "github": "GitHub",
@@ -64,11 +66,17 @@
     }
   },
   "projects": {
-    "section": "Selected projects",
-    "description": "Eight focused case studies spanning commerce, operations, analytics and product interfaces.",
+    "section": "Project case studies",
+    "description": "Eight projects presented through the problem, implemented features, technology stack, and verifiable source and demo links.",
     "stackLabel": "{title} technology stack",
     "githubLabel": "{title} GitHub repository, opens in a new tab",
     "demoLabel": "{title} live demo, opens in a new tab",
+    "caseStudy": "Case Study",
+    "labels": {
+      "challenge": "Problem",
+      "features": "Key features",
+      "demonstrates": "Demonstrates"
+    },
     "status": {
       "planned": "Planned",
       "inProgress": "In progress",
@@ -77,41 +85,102 @@
     "items": {
       "buildMarket": {
         "title": "BuildMarket Store",
-        "description": "A conversion-focused construction marketplace with product discovery, filtering, cart flows and a scalable catalog interface."
+        "problem": "Organize a large construction-products catalog and keep the journey from product discovery to checkout clear on every screen size.",
+        "solution": "A responsive storefront structures product discovery around searchable categories, focused product details, and a predictable cart flow. Reusable components keep the catalog consistent as the assortment grows.",
+        "keyFeatures": ["Catalog search", "Category filters", "Product detail pages", "Shopping cart", "Order flow", "Responsive interface"],
+        "demonstrates": "E-commerce interface design, catalog state management, and scalable UI component architecture."
       },
       "priceTracker": {
         "title": "Price Tracker Dashboard",
-        "description": "A monitoring workspace for product prices, trend changes, alert thresholds and compact historical comparisons."
+        "problem": "Bring price changes into one workspace so users can identify trends and products requiring attention without manual comparison.",
+        "solution": "The dashboard combines current values, historical charts, comparisons, and alert thresholds in one monitoring workspace. Visual hierarchy makes significant changes visible before users inspect individual records.",
+        "keyFeatures": ["Price history", "Trend charts", "Alert thresholds", "Product comparison", "Status filtering", "Responsive dashboard"],
+        "demonstrates": "Data visualization, API integration, and the design of information-dense dashboard interfaces."
       },
       "botOrders": {
         "title": "Bot Orders CRM",
-        "description": "An operator-focused CRM for Telegram bot orders, customer context, pipeline status and fast fulfillment workflows."
+        "problem": "Turn incoming Telegram bot orders into a manageable operator workflow while preserving customer context throughout fulfillment.",
+        "solution": "Orders are normalized into a CRM pipeline with customer profiles, status transitions, filters, and operational context. The interface gives operators one place to track fulfillment from intake to completion.",
+        "keyFeatures": ["Order pipeline", "Customer profiles", "Status management", "Search and filters", "Telegram integration", "Operational dashboard"],
+        "demonstrates": "Fullstack-like business logic, CRM workflow modeling, database work, and external integrations."
       },
       "salesAnalytics": {
         "title": "Sales Analytics Dashboard",
-        "description": "A clear business intelligence surface for revenue, conversion, channel performance and period-over-period analysis."
+        "problem": "Present sales metrics so revenue, conversion, and channel performance can be understood without manually processing source data.",
+        "solution": "A KPI-first dashboard turns sales data into period comparisons, channel breakdowns, and readable trends. Filters update the analytical context without forcing users to rebuild reports.",
+        "keyFeatures": ["KPI cards", "Sales charts", "Period filters", "Channel comparison", "Conversion analysis", "Responsive data views"],
+        "demonstrates": "Information architecture for analytics products and practical work with complex datasets."
       },
       "bookingService": {
         "title": "Booking Service App",
-        "description": "A responsive appointment flow with service selection, calendar availability and practical booking management."
+        "problem": "Make appointment booking predictable for customers and manageable for a business across available dates and time slots.",
+        "solution": "A guided booking flow connects service selection, calendar availability, authentication, and booking management. Explicit states prevent users from choosing unavailable slots or losing context between steps.",
+        "keyFeatures": ["Service selection", "Calendar availability", "Time-slot selection", "Authentication", "Booking management", "Form validation"],
+        "demonstrates": "Booking and calendar logic, authentication, flow validation, and availability state management."
       },
       "mediaLibrary": {
         "title": "Media Library API App",
-        "description": "A searchable media collection built around external API integration, saved lists and resilient content states."
+        "problem": "Combine external catalog search and personal saved lists in a resilient interface with clear loading and error states.",
+        "solution": "The application wraps an external media API in a focused discovery experience with search, detailed cards, and personal lists. Loading, empty, and error states keep asynchronous behavior understandable.",
+        "keyFeatures": ["API-powered search", "Media detail cards", "Saved lists", "Category browsing", "Loading states", "Error handling"],
+        "demonstrates": "REST API integration, asynchronous state management, and practical Vue/Nuxt development."
       },
       "saasLanding": {
         "title": "Animated SaaS Landing",
-        "description": "A high-performance product landing page with controlled motion, strong hierarchy and reusable marketing sections."
+        "problem": "Present a SaaS product through an expressive but performant page where motion supports the message without obstructing conversion.",
+        "solution": "The landing page uses controlled motion, strong content hierarchy, and repeated calls to action to explain the product without overwhelming the visitor. Responsive behavior and reduced-motion awareness protect usability.",
+        "keyFeatures": ["Responsive sections", "Controlled animation", "Product storytelling", "CTA flows", "Reusable components", "Performance optimization"],
+        "demonstrates": "Marketing-page implementation, motion design, reusable sections, and performance awareness."
       },
       "taskManager": {
         "title": "Team Task Manager",
-        "description": "A collaborative planning interface for assignments, priorities, progress visibility and focused daily execution."
+        "problem": "Structure collaborative work around tasks, ownership, and priorities so every participant can see current progress.",
+        "solution": "A shared task workspace connects role-based access, assignments, priorities, statuses, and progress tracking. Consistent task states make responsibility and next actions visible across the team.",
+        "keyFeatures": ["Authentication", "Role-based access", "Task assignment", "Priorities and statuses", "Team progress", "Filtering and search"],
+        "demonstrates": "A fullstack-like application with role-based behavior, business states, and collaborative workflows."
       }
     }
   },
+  "caseStudy": {
+    "eyebrow": "Project case study",
+    "backToProjects": "Back to projects",
+    "sections": {
+      "problem": "Problem",
+      "solution": "Solution",
+      "keyFeatures": "Key Features",
+      "techStack": "Tech Stack",
+      "demonstrates": "What it demonstrates",
+      "quality": "Quality checklist",
+      "links": "Links"
+    },
+    "qualityItems": {
+      "localization": "RU/EN localization",
+      "responsive": "Responsive design",
+      "readme": "README",
+      "vercel": "Vercel deployment",
+      "ci": "GitHub Actions CI",
+      "build": "Build checks"
+    },
+    "metadataTitle": "{title} Case Study | Andrey Badalin",
+    "githubLabel": "Open the {title} GitHub repository",
+    "demoLabel": "Open the {title} live demo"
+  },
+  "featuredProjects": {
+    "section": "Featured Projects",
+    "description": "Four strongest case studies that go beyond presentational frontend and demonstrate business logic, data, and multi-step product flows.",
+    "viewCase": "View case study",
+    "reasons": {
+      "botOrders": "A CRM workflow, Telegram integration, and the complete order lifecycle demonstrate a real operational business scenario.",
+      "salesAnalytics": "Complex data structure, KPIs, and comparative charts demonstrate mature dashboard and data-presentation work.",
+      "bookingService": "Calendar availability, time slots, authentication, and booking management require coordinated product logic.",
+      "taskManager": "Roles, assignments, statuses, and team progress form a complete workflow close to a fullstack product."
+    }
+  },
   "workflow": {
-    "section": "Workflow",
-    "description": "A direct process with explicit validation before release.",
+    "section": "AI Workflow",
+    "description": "AI is used as an engineering accelerator, not as a substitute for product understanding or ownership of the outcome.",
+    "aiTitle": "Manual control remains essential",
+    "aiDescription": "AI helps accelerate prototyping, review, refactoring, and documentation. I manually control architecture, behavioral validation, integrations, deployment, and final technical decisions.",
     "steps": {
       "idea": "Idea",
       "design": "Design",
@@ -120,6 +189,26 @@
       "deploy": "Deploy",
       "documentation": "Documentation"
     }
+  },
+  "standards": {
+    "section": "Development Standards",
+    "description": "Each project is presented as verifiable engineering work suitable for a public repository and reproducible deployment.",
+    "items": [
+      {"title": "GitHub repositories", "description": "Source code and change history are available for technical assessment."},
+      {"title": "Vercel deployments", "description": "Working project versions are available through stable public links."},
+      {"title": "GitHub Actions CI", "description": "Automated lint and build checks help prevent regressions."},
+      {"title": "README documentation", "description": "Purpose, stack, local setup, and deployment are documented in each repository."},
+      {"title": "RU/EN localization", "description": "User interfaces support both Russian and English."},
+      {"title": "npm audit", "description": "Dependencies are checked for known vulnerabilities before completion."},
+      {"title": "Build checks", "description": "Production builds and TypeScript checks run before changes are published."},
+      {"title": "Responsive design", "description": "Core flows are designed and verified across desktop and mobile layouts."}
+    ]
+  },
+  "employers": {
+    "section": "For employers",
+    "description": "This portfolio targets entry-level roles requiring a strong frontend foundation, product logic, and readiness to grow toward fullstack development.",
+    "positioning": "My current level is junior. I do not claim senior-level expertise; I demonstrate the ability to take projects to a documented, deployed, and verifiable result.",
+    "roles": ["Junior Frontend Developer", "Junior Fullstack Developer", "Web Developer", "React / Next.js Developer"]
   },
   "contact": {
     "titleMain": "Let's build something",

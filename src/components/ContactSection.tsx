@@ -17,7 +17,7 @@ export function ContactSection() {
       <div className="site-container contact-layout">
         <div>
           <span className="section-number" aria-hidden="true">
-            /05
+            /08
           </span>
           <h2 id="contact-title">
             {t("titleMain")}

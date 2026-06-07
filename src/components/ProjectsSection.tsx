@@ -10,7 +10,7 @@ export function ProjectsSection() {
     <section id="projects" className="page-section projects-section">
       <div className="site-container">
         <SectionHeading
-          number="03"
+          number="04"
           title={t("section")}
           description={t("description")}
         />

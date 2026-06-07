@@ -1,6 +1,7 @@
 import type { Project, ProjectStatus } from "@/data/projects";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Github } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const statusClass: Record<ProjectStatus, string> = {
   planned: "status-planned",
@@ -12,10 +13,16 @@ export function ProjectCard({ project }: { project: Project }) {
   const t = useTranslations("projects");
   const common = useTranslations("common");
   const title = t(`items.${project.translationKey}.title`);
-  const description = t(`items.${project.translationKey}.description`);
+  const description = t(
+    `items.${project.translationKey}.${project.problem}`,
+  );
+  const features = t.raw(
+    `items.${project.translationKey}.${project.keyFeatures}`,
+  ) as string[];
 
   return (
     <article
+      id={project.id}
       className={`project-card accent-${project.accent} ${
         project.featured ? "project-featured" : ""
       }`}
@@ -34,7 +41,22 @@ export function ProjectCard({ project }: { project: Project }) {
 
       <div className="project-content">
         <h3>{title}</h3>
-        <p>{description}</p>
+        <dl className="case-study-details">
+          <div>
+            <dt>{t("labels.challenge")}</dt>
+            <dd>{description}</dd>
+          </div>
+          <div>
+            <dt>{t("labels.features")}</dt>
+            <dd>{features.join(" · ")}</dd>
+          </div>
+          <div>
+            <dt>{t("labels.demonstrates")}</dt>
+            <dd>
+              {t(`items.${project.translationKey}.${project.demonstrates}`)}
+            </dd>
+          </div>
+        </dl>
         <ul className="stack-list" aria-label={t("stackLabel", { title })}>
           {project.stack.map((item) => (
             <li key={item}>{item}</li>
@@ -43,8 +65,12 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="project-links">
+        <Link href={`/projects/${project.slug}`}>
+          {t("caseStudy")}
+          <ArrowRight size={17} aria-hidden="true" />
+        </Link>
         <a
-          href={project.githubUrl}
+          href={project.links.github}
           target="_blank"
           rel="noreferrer"
           aria-label={t("githubLabel", { title })}
@@ -53,7 +79,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {common("github")}
         </a>
         <a
-          href={project.liveUrl}
+          href={project.links.live}
           target="_blank"
           rel="noreferrer"
           aria-label={t("demoLabel", { title })}

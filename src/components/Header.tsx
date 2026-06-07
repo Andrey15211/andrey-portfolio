@@ -3,18 +3,20 @@
 import { Menu, X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const locale = useLocale();
+  const pathname = usePathname();
   const t = useTranslations("header");
   const language = useTranslations("language");
+  const isHomePage = pathname === "/";
   const navigation = [
-    { label: t("about"), href: "#about" },
-    { label: t("skills"), href: "#skills" },
-    { label: t("projects"), href: "#projects" },
-    { label: t("workflow"), href: "#workflow" },
+    { label: t("about"), href: isHomePage ? "#about" : "/#about" },
+    { label: t("skills"), href: isHomePage ? "#skills" : "/#skills" },
+    { label: t("projects"), href: isHomePage ? "#projects" : "/#projects" },
+    { label: t("workflow"), href: isHomePage ? "#workflow" : "/#workflow" },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -22,16 +24,16 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="site-container header-inner">
-        <a className="brand" href="#top" aria-label={t("homeLabel")}>
+        <Link className="brand" href="/" aria-label={t("homeLabel")}>
           <span className="brand-mark">AB</span>
           <span className="brand-name">Andrey Badalin</span>
-        </a>
+        </Link>
 
         <nav className="desktop-nav" aria-label={t("primaryNavigation")}>
           {navigation.map((item) => (
-            <a key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href}>
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -40,7 +42,7 @@ export function Header() {
             {(["ru", "en"] as const).map((item) => (
               <Link
                 key={item}
-                href="/"
+                href={pathname}
                 locale={item}
                 className={locale === item ? "is-active" : ""}
                 aria-current={locale === item ? "page" : undefined}
@@ -49,9 +51,9 @@ export function Header() {
               </Link>
             ))}
           </div>
-          <a className="header-contact" href="#contact">
+          <Link className="header-contact" href={isHomePage ? "#contact" : "/#contact"}>
             {t("letsTalk")}
-          </a>
+          </Link>
         </div>
 
         <button
@@ -72,18 +74,18 @@ export function Header() {
         aria-label={t("mobileNavigation")}
       >
         {navigation.map((item) => (
-          <a key={item.href} href={item.href} onClick={closeMenu}>
+          <Link key={item.href} href={item.href} onClick={closeMenu}>
             {item.label}
-          </a>
+          </Link>
         ))}
-        <a href="#contact" onClick={closeMenu}>
+        <Link href={isHomePage ? "#contact" : "/#contact"} onClick={closeMenu}>
           {t("contact")}
-        </a>
+        </Link>
         <div className="mobile-language-switcher">
           {(["ru", "en"] as const).map((item) => (
             <Link
               key={item}
-              href="/"
+              href={pathname}
               locale={item}
               className={locale === item ? "is-active" : ""}
               onClick={closeMenu}

@@ -17,10 +17,14 @@ export function WorkflowSection() {
     <section id="workflow" className="page-section workflow-section">
       <div className="site-container">
         <SectionHeading
-          number="04"
+          number="05"
           title={t("section")}
           description={t("description")}
         />
+        <div className="workflow-note">
+          <strong>{t("aiTitle")}</strong>
+          <p>{t("aiDescription")}</p>
+        </div>
         <ol className="workflow-list">
           {steps.map((step, index) => (
             <li key={step.label}>
