@@ -7,13 +7,9 @@
 
 A bilingual developer portfolio and central case-study hub for eight production-like web projects. It presents each project through the problem it solves, key features, technology stack, demonstrated skills, source repository, and live deployment.
 
-## Live Demo
+## 🚀 Live Demo
 
-https://andrey-portfolio-liard.vercel.app
-
-## Source Code
-
-https://github.com/Andrey15211/andrey-portfolio
+**[https://andrey-portfolio-liard.vercel.app](https://andrey-portfolio-liard.vercel.app)**
 
 ## Features
 
