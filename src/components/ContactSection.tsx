@@ -5,6 +5,18 @@ export function ContactSection() {
   const t = useTranslations("contact");
   const contacts = [
     {
+      label: "Telegram",
+      value: "@andrey15211",
+      href: "https://t.me/andrey15211",
+      icon: Github,
+    },
+    {
+      label: "Email",
+      value: "andrejbadalin8@gmail.com",
+      href: "mailto:andrejbadalin8@gmail.com",
+      icon: Github,
+    },
+    {
       label: t("github"),
       value: t("githubValue"),
       href: "https://github.com/Andrey15211",
